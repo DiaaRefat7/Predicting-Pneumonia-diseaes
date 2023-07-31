@@ -1,0 +1,49 @@
+.navbar {
+    position: fixed; /* Change position to fixed */
+    top: 0; /* Position the navbar at the top */
+    width: 100%; /* Make the navbar full width */
+    z-index: 9999;
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Josefin Sans' ,sans-serif;
+    
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.logo span {
+    color: red;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex; /* Use inline-flex to align the list items horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ea1538;
+    transition: .3s;
+}

@@ -1,0 +1,243 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans' ,sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+
+.navbar {
+    position: relative;
+    z-index: 9999; /*Here, the z-index property with a value of 9999 ensures that the navbar is positioned in front of other elements with lower z-index values.  */
+  }
+.get-started-btn {
+    position: relative;
+    z-index: 9999; /*Here, the z-index property with a value of 9999 ensures that the navbar is positioned in front of other elements with lower z-index values.  */
+  }
+  
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+.logo{
+    color: white;
+    font-size: 28px;
+}
+
+.logo span{
+    color: red;
+} 
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    align-items: center;
+
+    }
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    }
+nav ul li a:hover{
+    color: #ea1538;
+    transition: .3s;
+    }
+
+    .get-started-btn {
+        overflow: visible;
+        border: none;
+        background: #ea1538;
+        padding: 12px 30px;
+        border-radius: 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        transition: .4s;
+        position: absolute;
+        top: 550px;
+        left: 105px;
+        width: 120px;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none; /* Added line to remove underline */
+    }
+    
+    .get-started-btn:hover {
+        overflow: visible;
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+    
+    
+
+.banner1, .banner2, .banner3, .banner4{
+    height: 100vh;
+    width: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+
+img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoom-out 6s linear infinite;
+}
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+    }
+}
+
+.text-box{
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    top: 200px;
+    left: 100px;
+    color: #fff;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+}
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.text-box h1{
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.text-box p{
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 80px;
+}
+
+
+.text-box span {
+    background: red;
+    height: 1px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
+
+
+.banner1{
+    animation: slide1 24s linear infinite;
+}
+.banner2{
+    animation: slide2 24s linear infinite;
+}
+.banner3{
+    animation: slide3 24s linear infinite;
+}
+.banner4{
+    animation: slide4 24s linear infinite;
+}
+
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+.text-box1{
+    animation-delay:0s ;
+}
+.text-box2{
+    animation-delay:6s ;
+}
+.text-box3{
+    animation-delay:12s ;
+}
+.text-box4{
+    animation-delay:18s;
+}

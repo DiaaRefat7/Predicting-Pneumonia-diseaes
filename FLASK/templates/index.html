@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>
+            Diaa Project
+        </title> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static\style.css">
+        
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <h2 class="logo">pneu<span>monia</span></h2>
+                <ul>
+                    <li><a href= {{ url_for('home_page') }} >Home</a></li>
+                    <li><a href= {{ url_for('about_page') }} >About</a></li>
+                    <li><a href= {{ url_for('contact_page') }} >Contact Us</a></li>
+                    
+                </ul>
+                
+            </nav>
+        </div>
+
+        <div class="banner1">
+            <img src="static/style/images/image_1.PNG">
+            <div class="text-box text-box1">
+                <h1>What is the Pneumonia? </h1>
+                <span></span>
+                <p>Pneumonia is a lung infection that causes inflammation and fluid buildup in the air sacs of the lungs. 
+                    It can be caused by bacteria, viruses, or fungi. Pneumonia affects the respiratory system and can lead to symptoms such as coughing, 
+                    chest discomfort, and difficulty breathing. 
+                    <br>
+                    <br>
+                    Treatment typically involves medication to target the specific cause of the infection, along with rest and supportive care. Pneumonia can vary in severity,
+                    ranging from mild cases that can be managed at home to more severe cases that require hospitalization.</p>
+
+            </div>
+        </div>
+        <div class="banner2">
+            <img src="static/style/images/image_2.PNG">
+            <div class="text-box text-box2">
+                <h1>pneumonia symptoms: </h1>
+                <span></span>
+                <p>1. Persistent cough, often producing phlegm or mucus.<br>
+                    2. Difficulty breathing or shortness of breath.<br>
+                    3. Chest pain, particularly when coughing or breathing deeply.<br>
+                    4. Fever, accompanied by chills and fatigue.<br>
+                    5. Rapid breathing or increased respiratory rate.<br>
+                    6. Bluish tint to the lips or fingertips, indicating poor oxygenation.</p>
+
+            </div>
+        </div>
+        <div class="banner3">
+            <img src="static/style/images/image_3.PNG">
+            <div class="text-box text-box3">
+                <h1>How to avoid Pneumonia disease?</h1>
+                <span></span>
+                <p>1. Get vaccinated against pneumonia and influenza.<br>
+                    2. Practice good hand hygiene and avoid touching your face.<br>
+                    3. Maintain a healthy lifestyle with a balanced diet and regular exercise.<br>
+                    4. Avoid smoking and exposure to secondhand smoke.<br>
+                    5. Practice respiratory hygiene by covering your mouth and nose with a tissue or your elbow when coughing or sneezing.<br>
+                    6. Avoid close contact with individuals who have respiratory infections or symptoms of pneumonia.<br>
+                 </p>
+
+            </div>
+        </div>
+        <div class="banner4">
+            <img src="static/style/images/image_4.PNG">
+            <div class="text-box text-box4">
+                <h2>If you suspect you have pneumonia, here are six steps to follow:</h2>
+                <span></span>
+                <p>
+                    1. Seek medical help if pneumonia is suspected.<br>
+                    2. Follow prescribed treatment, including antibiotics and rest.<br>
+                    3. Take medications as directed and complete the full course.<br>
+                    4. Stay hydrated and rest to support recovery.<br>
+                    5. Practice respiratory hygiene to prevent the spreading of germs.<br>
+                    6. Monitor symptoms and seek further medical assistance if needed.
+
+            </div>
+        </div>
+        <a href= {{ url_for('form_page') }} class="get-started-btn">Get Started</a> 
+        <script src="static/script.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negative</title>
+    <link rel="stylesheet" href="static\negative.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <h2 class="logo">pneu<span>monia</span></h2>
+            <ul>
+                <li><a href= {{ url_for('home_page') }} >Home</a></li>
+                <li><a href= {{ url_for('about_page') }} >About</a></li>
+                <li><a href= {{ url_for('contact_page') }} >Contact Us</a></li>
+                
+            </ul>
+            
+        </nav>
+    </div>
+
+    <img src="static\style\images\negative.png" alt="negative" id="neg-image">
+    <div class="container">
+        <h1>Pneumonia Detection Results</h1>
+        <p id="result-message">Congratulations! Based on our analysis of your X-ray image, there are no indications of pneumonia. You are in good health!</p>
+    </div>
+
+</body>
+</html>

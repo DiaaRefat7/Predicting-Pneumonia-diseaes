@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="static\contact_us.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <h2 class="logo">pneu<span>monia</span></h2>
+            <ul>
+                <li><a href= {{ url_for('home_page') }} >Home</a></li>
+                <li><a href= {{ url_for('about_page') }} >About</a></li>
+                <li><a href= {{ url_for('contact_page') }} >Contact Us</a></li>
+                
+            </ul>
+            
+        </nav>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-card">
+            <img src="static\style\images\diaa.jpg" alt="Student 1" class="circle-photo">
+            <h3>Diaa <span>Ahmed Refaat</span></h3>
+            <p class="contact-info">
+                LinkedIn: <a href="https://www.linkedin.com/student1">linkedin.com/Diaa</a>
+                Gmail: <a href="student3@gmail.com"><span>student3@gmail.com</span></a>
+            </p>
+        </div>
+        <div class="contact-card">
+            <img src="static\style\images\mostafa.jpg" alt="Student 2" class="circle-photo">
+            <h3>Mostafa <span>Mohamed El-Demerdash</span></h3>
+            <p class="contact-info">
+                LinkedIn: <a href="https://www.linkedin.com/student2">linkedin.com/Mostafa</a>
+                Gmail: <a href="student3@gmail.com"><span>student3@gmail.com</span></a>
+            </p>
+        </div>
+        <div class="contact-card">
+            <img src="static\style\images\abdo.jpg" alt="Student 3" class="circle-photo">
+            <h3>Abdo <span>Mohsen</span></h3>
+            <p class="contact-info">
+                LinkedIn: <a href="https://www.linkedin.com/student3">linkedin.com/Abdo Mohsen</a>
+                Gmail: <a href="student3@gmail.com"><span>student3@gmail.com</span></a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

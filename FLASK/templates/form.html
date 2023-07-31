@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static\style.css">        
+        <link rel="stylesheet" href="static\form.css">
+        <script src="https://kit.fontawesome.com/3a07be2a4b.js" crossorigin="anonymous"></script>
+        <title>Form Page</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <h2 class="logo">pneu<span>monia</span></h2>
+                <ul>
+                    <li><a href= {{ url_for('home_page') }} >Home</a></li>
+                    <li><a href= {{ url_for('about_page') }} >About</a></li>
+                    <li><a href= {{ url_for('contact_page') }} >Contact Us</a></li>
+                    
+                </ul>
+                
+            </nav>
+        </div>
+        
+        <div class="hero">
+            <form method= 'POST' enctype=multipart/form-data>
+                <div class="welcome-section">
+                    <h1><i>Please enter your <span>information</span> below to help us assist you:</i></h1>
+                </div>
+                <div class="row">
+                    <div class="input-group"> 
+                        <input type="text" id="name" name = 'name' required> 
+                        <label for="name"><i class="fa-sharp fa-solid fa-user"></i> Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="number" name = "number"  pattern="[0-9]{11}" required> 
+                        <label for="number"><i class="fa-solid fa-phone"></i> Phone No. </label>
+                    </div>    
+                </div> 
+                <div class="row">
+                    <div class="input-group">
+                        <input type="email" id="email" name = "email"  required> 
+                        <label for="email"><i class="fa-solid fa-envelope"></i> Email Id</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="age" name='age' pattern="[0-9]{1,3}" required> 
+                        <label for="age"><i class="fa-solid fa-list-ol"></i> Your age</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" id = 'gender' name = 'gender'>
+                        <label for="gender"><i class="fa-solid fa-venus-mars"></i> Gender</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="marital-status" name="marital-status" required> 
+                        <label for="marital-status"> Marital status</label>
+                    </div>
+                </div>
+
+                <div class="symptom-section">
+                    <h2>Symptoms:</h2>
+                    <div class="symptom-checkbox">
+                        <input type="checkbox" id="cough-checkbox" name = 'c1'>
+                        <label for="cough-checkbox">Cough</label>
+                        <input type="range" min="0" max="10" class="symptom-strength" name = 'c1-val'>
+                    </div>
+                    
+                    <div class="symptom-checkbox">
+                        <input type="checkbox" id="fever-checkbox" name = 'c2'>
+                        <label for="fever-checkbox">Fever</label>
+                        <input type="range" min="0" max="10" class="symptom-strength" name = 'c2-val'>
+                    </div>
+                    <div class="symptom-checkbox">
+                        <input type="checkbox" id="shortness-breath-checkbox" name = 'c3'>
+                        <label for="shortness-breath-checkbox">Shortness of Breath</label>
+                        <input type="range" min="0" max="10" class="symptom-strength" name = 'c3-val'>
+                    </div>
+                    <div class="symptom-checkbox">
+                        <input type="checkbox" id="chest-pain-checkbox" name = 'c4'>
+                        <label for="chest-pain-checkbox">Chest Pain</label>
+                        <input type="range" min="0" max="10" class="symptom-strength" name = 'c4-val'>
+                    </div>
+                    <div class="symptom-checkbox">
+                        <input type="checkbox" id="chills-checkbox" name = 'c5'>
+                        <label for="chills-checkbox">Chills</label>
+                        <input type="range" min="0" max="10" class="symptom-strength" name = 'c5-val'>
+                    </div>
+                    <div class="symptom-checkbox">
+                        <input type="checkbox" id="headache-checkbox" name = 'c6'>
+                        <label for="headache-checkbox">Headache</label>
+                        <input type="range" min="0" max="10" class="symptom-strength" name = 'c6-val'>
+                    </div>
+                    <div class="symptom-checkbox">
+                        <input type="checkbox" id="muscle-aches-checkbox" name = 'c7'>
+                        <label for="muscle-aches-checkbox">Muscle Aches</label>
+                        <input type="range" min="0" max="10" class="symptom-strength" name = 'c7-val'>
+                    </div>
+                    <div class="symptom-checkbox">
+                        <input type="checkbox" id="nausea-or-vomiting-checkbox" name = 'c8'>
+                        <label for="nausea-or-vomiting-checkbox">Nausea or Vomiting</label>
+                        <input type="range" min="0" max="10" class="symptom-strength" name = 'c8-val'>
+                    </div>
+                    <div class="symptom-checkbox">
+                        <input type="checkbox" id="confusion-checkbox" name = 'c9'>
+                        <label for="confusion-checkbox">Confusion</label>
+                        <input type="range" min="0" max="10" class="symptom-strength" name = 'c9-val'>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="8" name="message" required></textarea> 
+                    <label for="message"><i class="fa-solid fa-message"></i> Medical history or any comments</label>
+                </div>
+                <br>
+
+                <div class="upload-message">Upload your image here or <span>drag and drop</span> it</div>
+                <label for="images" class="drop-container">
+                    <span class="drop-title">Drop image here</span>
+                    or
+                    <input type="file" id="images" accept="image/*" name = 'file' required>
+                </label>            
+                <button type="submit"><i class="fa-regular fa-paper-plane"></i>Get Results</button>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+            </form>
+        </div>
+        <br>
+        
+    </body>
+</html>

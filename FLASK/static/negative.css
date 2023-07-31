@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:linear-gradient(rgba(0,0,0,0.4), #3551b5), url(style/images/image13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set the height of the body to full viewport height */
+}
+
+
+/* ------------------------------navbar----------------------------- */
+.navbar {
+    position: fixed; /* Change position to fixed */
+    top: 0; /* Position the navbar at the top */
+    width: 100%; /* Make the navbar full width */
+    z-index: 9999;
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Josefin Sans' ,sans-serif;
+    
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.logo span {
+    color: red;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex; /* Use inline-flex to align the list items horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ea1538;
+    transition: .3s;
+}
+/* -------------------------negative image ------------------- */
+#neg-image{
+    width: 35%;
+    height: 50%;
+    margin-left: 32%;
+    margin-top: 5%;
+}
+
+.container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: red;
+    margin-top: -30px;
+    font-size: 45px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  #result-message {
+    font-size: 35px;
+    color: rgb(0, 255, 0);
+  }
+  

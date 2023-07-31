@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Pneumonia Detection Project</title>
+    <link rel="stylesheet" href="static\about.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <h2 class="logo">pneu<span>monia</span></h2>
+            <ul>
+                <li><a href= {{ url_for('home_page') }} >Home</a></li>
+                <li><a href= {{ url_for('about_page') }} >About</a></li>
+                <li><a href= {{ url_for('contact_page') }} >Contact Us</a></li>
+                
+            </ul>
+            
+        </nav>
+    </div>
+
+    <section class="about-section">
+        <h1>About <span> Detection</span> Project</h1>
+        <p>Our graduation project utilizes deep learning techniques to develop an automated system for pneumonia detection. By leveraging artificial intelligence, we aim to provide a reliable and efficient solution for diagnosing pneumonia from chest X-ray images.</p>
+        <br><p>Pneumonia is a lung infection that can be caused by various microorganisms, including bacteria, viruses, and fungi. It affects the air sacs in one or both lungs, causing inflammation and filling them with fluid or pus.</p>
+        <br><p>The proposed system analyzes the uploaded chest X-ray images using advanced algorithms to identify patterns and abnormalities associated with pneumonia. This can assist medical professionals in making accurate and timely diagnoses, leading to improved patient care and outcomes.</p>
+        <br><p>By combining the power of deep learning and medical imaging, we strive to contribute to the field of healthcare technology and enhance the efficiency of pneumonia diagnosis, ultimately benefiting patients and healthcare providers.</p>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:linear-gradient(rgba(0,0,0,0.4), #3551b5), url(style/images/image13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set the height of the body to full viewport height */
+    background-attachment: fixed; /* Add this line to make the background fixed */
+}
+
+
+/* ------------------------------navbar----------------------------- */
+.navbar {
+    position: fixed; /* Change position to fixed */
+    top: 0; /* Position the navbar at the top */
+    width: 100%; /* Make the navbar full width */
+    z-index: 9999;
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Josefin Sans' ,sans-serif;
+    
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.logo span {
+    color: red;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex; /* Use inline-flex to align the list items horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ea1538;
+    transition: .3s;
+}
+
+/* ----------------------positive image ---------------- */
+#pos-image {
+    width: 40%;
+    height: 350px;
+    margin-left: -100px;
+
+  }
+
+#seg-image {
+    width: 40%;
+    height: 350px;
+    margin-right: -50px;
+
+}
+
+.container {
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  h1 {
+    color: red;
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: red;
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10%;
+  }
+  
+
+  
+  #caption {
+    font-size: 18px;
+    color: #00f7ff;
+    margin-bottom: 50px;
+  }
+  
+  #result-message {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    width: 90%;
+    text-align: center;
+    margin-left: 7%;
+  }
+  
+.container  ul {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: 12%;
+  }
+  
+.container  ul li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+.container  ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    background-color: #ea1538;
+    border-radius: 50%;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #00ffea;
+    margin-top: 30px;
+    width: 90%;
+    text-align: center;
+    margin-left: 7%;
+  }
+  

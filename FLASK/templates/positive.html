@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="static\positive.css">
+</head>
+<body>
+  <div class="navbar">
+    <nav>
+        <h2 class="logo">pneu<span>monia</span></h2>
+        <ul>
+            <li><a href= {{ url_for('home_page') }} >Home</a></li>
+            <li><a href= {{ url_for('about_page') }} >About</a></li>
+            <li><a href= {{ url_for('contact_page') }} >Contact Us</a></li>
+            
+        </ul>
+        
+    </nav>
+</div>
+  <div class="container">
+    <h1>Pneumonia Detection Results</h1>
+    <img src="static\style\images\positive.png" alt="positive" id="pos-image">
+    <img src={{  segmented_image  }} alt="Segmented X-ray Image" id="seg-image">
+
+    <p id="caption">Segmentation Result: The highlighted region in the image represents the area affected by pneumonia.</p>
+    <p id="result-message">Our analysis of your X-ray image indicates the presence of pneumonia. It is highly recommended that you visit the nearest doctor for further evaluation and treatment.</p>
+    <h2>Common Symptoms of Pneumonia:</h2>
+    <ul id="symptoms-list">
+      <li>Fever or chills</li>
+      <li>Cough with phlegm or blood</li>
+      <li>Shortness of breath</li>
+      <li>Chest pain</li>
+      <li>Fatigue</li>
+      <li>Sweating</li>
+      <li>Loss of appetite</li>
+      <li>Rapid breathing</li>
+    </ul>
+    <p>Disclaimer: This list of symptoms is for informational purposes only. It is not a substitute for professional medical advice. Please consult a healthcare provider if you experience any of these symptoms.</p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans' ,sans-serif;
+    box-sizing: border-box;
+}
+
+.welcome-section {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.welcome-section span {
+    font-weight: bold;
+    color: #ea1538;
+}
+.welcome-section h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+
+
+.hero {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.4), #3551b5), url(style/images/image13.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; /* Add this line to enable vertical scroll */
+}
+
+
+
+
+form{
+    margin-top: 50%;
+    width: 90%;
+    max-width: 900px;
+}
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+label{
+    height: 100%;
+    position: absolute; 
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+button{
+    padding: 10px 0; 
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
+    top:-35px;
+    font-size: 14px;
+}
+
+
+.row{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.row .input-group{
+    flex-basis: 48%;
+    
+}
+/* --------------------------sympton section ----------------- */
+.symptom-section {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.symptom-section h2 {
+    font-size: 24px;
+    font-weight: bold ;
+    color: white;
+}
+
+.symptom-checkbox {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 10px; */
+}
+
+.symptom-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: -400px;
+}
+
+.symptom-checkbox input[type="range"] {
+    width: 200px;
+}
+
+
+.symptom-checkbox label {
+    font-size: 16px;
+    color: white;
+    position: relative;
+    margin-left: -450px;
+    width: 200px;
+    position: inherit;
+    
+}
+
+
+
+/* ------------------navbar------------------------- */
+.navbar {
+    position: fixed; /* Change position to fixed */
+    top: 0; /* Position the navbar at the top */
+    width: 100%; /* Make the navbar full width */
+    z-index: 9999;
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Josefin Sans' ,sans-serif;
+    
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.logo span {
+    color: red;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex; /* Use inline-flex to align the list items horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ea1538;
+    transition: .3s;
+}
+
+
+
+/* ------------------------------------uploading image ------------------------- */
+.upload-message {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .upload-message span {
+    font-weight: bold;
+    color: #ea1538;
+  }
+
+  .drop-container {
+    position: relative;
+    margin-top: 120px;
+    margin-left: 50%;
+    margin-bottom: -50px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed white;
+    color: white;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.drop-container:hover {
+    background: #eee;
+    border-color: white;
+    color: red; /* Change the color to red when hovering */
+}
+
+.drop-container:hover .drop-title,
+.drop-container:hover input[type="file"]+span {
+    color: red; /* Change the color of the drop title and "No File Chosen" text to red when hovering */
+}
+
+.drop-title {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+}
+
+
+
+.drop-container input[type="file"]:hover {
+    color: red; /* Change the color of the "No File Chosen" text to red */
+}
+
+
